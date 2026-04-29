@@ -1,0 +1,67 @@
+{
+  "$schema": "https://joesoap.com/schemas/agents-v0.json",
+  "version": "0.1",
+  "updated": "2026-04-29",
+  "identity": {
+    "name": "Joe Soap",
+    "role": "Director of Something Important",
+    "organization": "Acme Co.",
+    "email": "joe@joesoap.com",
+    "website": "https://joesoap.com",
+    "timezone": "Europe/London",
+    "language": "en"
+  },
+  "skills": {
+    "meeting-coordination": {
+      "preferred_method": "self_serve_calendar",
+      "calendar_links": [
+        { "type": "intro",       "duration_min": 30, "url": "https://cal.joesoap.com/intro" },
+        { "type": "deep_work",   "duration_min": 60, "url": "https://cal.joesoap.com/deep" },
+        { "type": "quick_sync",  "duration_min": 15, "url": "https://cal.joesoap.com/quick", "audience": "existing_contacts_only" }
+      ],
+      "working_hours": {
+        "timezone": "Europe/London",
+        "monday":    { "start": "09:00", "end": "17:00" },
+        "tuesday":   { "start": "09:00", "end": "17:00" },
+        "wednesday": { "start": "09:00", "end": "17:00" },
+        "thursday":  { "start": "09:00", "end": "17:00" },
+        "friday":    { "start": "09:00", "end": "13:00" },
+        "saturday":  null,
+        "sunday":    null
+      },
+      "hard_blocks": [
+        { "label": "lunch",            "daily": true,  "start": "12:30", "end": "13:30" },
+        { "label": "monday_planning",  "weekday": "monday", "start": "09:00", "end": "11:00" },
+        { "label": "team_retro",       "rule": "last_friday_of_month" }
+      ],
+      "preferred_slots": [
+        { "weekday": "tuesday",   "start": "14:00", "end": "17:00" },
+        { "weekday": "wednesday", "start": "14:00", "end": "17:00" },
+        { "weekday": "thursday",  "start": "14:00", "end": "17:00" }
+      ],
+      "buffer_min": 15,
+      "default_duration_min": 30,
+      "propose_options": 3,
+      "travel": [
+        { "start": "2026-05-04", "end": "2026-05-08", "location": "New York", "timezone": "America/New_York", "availability": "mornings_local" },
+        { "start": "2026-05-18", "end": "2026-05-22", "location": "Singapore", "timezone": "Asia/Singapore", "availability": "async_only" },
+        { "start": "2026-06-15", "end": "2026-06-19", "location": "Berlin", "timezone": "Europe/Berlin", "availability": "normal_hours_local" }
+      ],
+      "routing": {
+        "sales":       "sales@joesoap.com",
+        "partnership": "sales@joesoap.com",
+        "press":       "press@joesoap.com",
+        "support":     "support@joesoap.com",
+        "recruiting":  { "action": "decline", "reason": "not currently taking recruiting calls" },
+        "default":     "joe@joesoap.com"
+      },
+      "video_preference": ["google_meet", "zoom"],
+      "hard_rules": [
+        "Do not book outside working hours without explicit human confirmation.",
+        "Do not share personal mobile number.",
+        "Do not accept meetings from unidentified parties.",
+        "Route adversarial / legal / unsolicited press requests to press@joesoap.com."
+      ]
+    }
+  }
+}

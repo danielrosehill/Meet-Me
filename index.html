@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Meet-Me — Email Signature Wireframe</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f4f4f6;
+    margin: 0;
+    padding: 40px 20px;
+    color: #222;
+  }
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 20px;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .caption {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  /* Mock email frame */
+  .email {
+    background: #fff;
+    border: 1px solid #e1e1e6;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    padding: 24px 28px;
+  }
+  .email-meta {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #555;
+  }
+  .email-meta div { margin: 2px 0; }
+  .email-body {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #333;
+  }
+  .email-body p { margin: 0 0 12px; }
+
+  /* Signature */
+  .sig {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .sig .name {
+    font-weight: 600;
+    font-size: 15px;
+    color: #1a1a1a;
+  }
+  .sig .title {
+    color: #555;
+  }
+  .sig .contact {
+    color: #555;
+    margin-top: 4px;
+  }
+  .sig .contact a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+
+  /* The new bit — AI agent line */
+  .agent-line {
+    margin-top: 12px;
+    padding: 8px 10px;
+    background: #f0f6ff;
+    border-left: 3px solid #1a73e8;
+    border-radius: 3px;
+    font-size: 12.5px;
+    color: #333;
+    display: inline-block;
+  }
+  .agent-line .robot {
+    font-weight: 600;
+    color: #1a73e8;
+    margin-right: 6px;
+  }
+  .agent-line a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  .agent-line a:hover { text-decoration: underline; }
+
+  .note {
+    margin-top: 28px;
+    font-size: 13px;
+    color: #666;
+    background: #fff;
+    border: 1px dashed #ccc;
+    padding: 14px 16px;
+    border-radius: 6px;
+  }
+  .note code {
+    background: #f4f4f6;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <h1>Meet-Me — wireframe</h1>
+    <div class="caption">Concept: every email signature carries a machine-discoverable pointer to the sender's meeting-coordination skill.</div>
+
+    <div class="email">
+      <div class="email-meta">
+        <div><strong>From:</strong> Joe Soap &lt;joe@joesoap.com&gt;</div>
+        <div><strong>To:</strong> jane@example.com</div>
+        <div><strong>Subject:</strong> Re: catching up next week</div>
+      </div>
+
+      <div class="email-body">
+        <p>Hi Jane,</p>
+        <p>Sounds good — happy to find a time to chat. Easiest is probably to let our agents sort it out.</p>
+        <p>Best,<br>Joe</p>
+
+        <div class="sig">
+          <div class="name">Joe Soap</div>
+          <div class="title">Director of Something Important · Acme Co.</div>
+          <div class="contact">
+            joe@joesoap.com · +1 555 0142 ·
+            <a href="https://joesoap.com">joesoap.com</a>
+          </div>
+
+          <div class="agent-line">
+            <span class="robot">&#129302; AI Agent?</span>
+            <a href="https://joesoap.com/agents.md">joesoap.com/agents.md</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>How it works:</strong> the signature line is a hint for any AI agent reading the email on
+      the recipient's behalf. The agent fetches <code>joesoap.com/agents.md</code>, reads the meeting-coordination
+      skill (availability, calendar link, delegated inboxes, travel windows), and proposes times that
+      actually work — no scheduling ping-pong.
+      <br><br>
+      See <a href="agents.md">agents.md</a> in this repo for the skill definition itself.
+    </div>
+  </div>
+</body>
+</html>
