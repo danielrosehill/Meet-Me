@@ -1,7 +1,8 @@
 # Meet-Me
 
-[![Part 1 — Meet-Me](https://img.shields.io/badge/Part_1-Meet--Me-1a73e8?style=for-the-badge)](https://github.com/danielrosehill/Meet-Me)
-[![Part 2 — The Lobby](https://img.shields.io/badge/Part_2-The_Lobby-555?style=for-the-badge)](https://github.com/danielrosehill/The-Lobby)
+[![Part 1 — Meet-Me (public manifest)](https://img.shields.io/badge/Part_1-Meet--Me-1a73e8?style=for-the-badge)](https://github.com/danielrosehill/Meet-Me)
+[![Part 2 — The Lobby (sandbox)](https://img.shields.io/badge/Part_2-The_Lobby-555?style=for-the-badge)](https://github.com/danielrosehill/The-Lobby)
+[![Part 3 — True A2A](https://img.shields.io/badge/Part_3-True_A2A-555?style=for-the-badge)](https://github.com/danielrosehill/The-Lobby#model-3--true-a2a)
 
 ![Dual-track email signature: a booking link for the human, a booking link for the AI agent](./diagrams/02-email-signature-dual-track.webp)
 
